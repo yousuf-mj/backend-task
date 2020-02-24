@@ -3,7 +3,6 @@
 This is the backend for providing job listings to the frontend
 there is only one endpoint http://localhost:5002/api/v1/jobs, which returns and object with jobs which is an array of objects.
 
-
 Example: 
 ```
 {
@@ -19,3 +18,5 @@ Example:
 			logo:"https://logo.clearbit.com/company.com"
 		},
 ```
+
+To start the server `npm run dev`
