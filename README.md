@@ -8,7 +8,7 @@ Example:
 {
 	jobs: [
 		{
-            id: 1001,
+            id: "job-1001",
 			title: "React Developer",
 			location: "EC1V, City of London",
 			salary: "£75,000",
