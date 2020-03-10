@@ -1,7 +1,7 @@
 const jobs = {
 	jobs: [
 		{
-			id: "1000",
+			id: "job-1000",
 			title: "React Developer",
 			location: "EC1V, City of London",
 			salary: "£75,000",
@@ -12,7 +12,7 @@ const jobs = {
 			logo:"https://logo.clearbit.com/company.com"
 		},
 		{
-			id: "1001",
+			id: "job-1001",
 			title: "Senior Developer",
 			location: "Shoreditch, London",
 			salary: "£80,000",
@@ -23,7 +23,7 @@ const jobs = {
 			logo:"https://logo.clearbit.com/company.com"
 		},
 		{
-			id: "1002",
+			id: "job-1002",
 			title: "Lead NodeJs Developer",
 			location: "London",
 			salary: "£90,000",
@@ -34,7 +34,7 @@ const jobs = {
 			logo:"https://logo.clearbit.com/company.com"
 		},
 		{
-			id: "1003",
+			id: "job-1003",
 			title: "React Developer",
 			location: "EC1V, City of London",
 			salary: "£75,000",
@@ -45,7 +45,7 @@ const jobs = {
 			logo:"https://logo.clearbit.com/company.com"
 		},
 		{
-			id: "1004",
+			id: "job-1004",
 			title: "Senior Developer",
 			location: "Shoreditch, London",
 			salary: "£80,000",
@@ -56,7 +56,7 @@ const jobs = {
 			logo:"https://logo.clearbit.com/company.com"
 		},
 		{
-			id: "1005",
+			id: "job-1005",
 			title: "Lead NodeJs Developer",
 			location: "London",
 			salary: "£90,000",
