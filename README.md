@@ -1,33 +1,55 @@
-# Full stack technical test (backend)
+# Fullstack technical test
+### This test will be between 45-60 minutes and contains two main tasks:
 
-This is the backend for providing job listings. There is only one endpoint `http://localhost:5002/api/v1/jobs` 
+- Clone both repos
+  - [bravo-technical-test-backend](https://github.com/trufa-me/bravo-technical-test-backend)
+  - [bravo-technical-test-frontend](https://github.com/trufa-me/bravo-technical-test-frontend)
+- Review and familiarise yourself with each project directory.
+- Install dependencies for both repos, you can use yarn or npm. 
+- Run both projects. 
+  - The backend is a express app and can be run using `yarn dev` or `npm run dev`
+  - The frontend is a create-react-app and should auto load the browser on `yarn start` or `npm run start` if not, browse to `http://localhost:5001`
 
-Here is an example what the structure will look like: 
- 
+### Task 1:
+
+#### Backend:
+
+Currently the backend is able to provide a list of results using a GET request to: `http://localhost:5002/api/v1/jobs`
+The problem you will be required solve, is by figuring out the best way to filter and sort the results. For example, 
+a user might only want to see jobs from a specific `location` or might want to sort jobs by `salary`, what would be the best way to go about this?
+
+For now we only require you to add the following features:
+- return only results by title
+- return only results by location
+- and sort results by salary
+
+The end user should be able use this new functionality separately or in combination.
+
+**Feel free to make what ever changes required to the express app you deem necessary** 
+
+### Task 2:
+
+The frontend will now need to be connected to your backend so that a user can see the job ads. 
+You will notice that there are already some components available for each of your values on a job object. 
+The task to be accomplished here is to 
+- compose a Card component with your existing components and call the API on `http://localhost:5002/api/v1/jobs`
+- retrieve the jobs and render them in your new composed card component. 
+- feel free to use your the data coming back from your new features on the backend.
+
+## Notes:
+Here is an example what the structure looks like. All the data can be found in `bravo-technical-test-backend/db/data.js`
 ```
+ [
     {
-        jobs: [
-            {
-                id: "job-1001",
-                title: "React Developer",
-                location: "EC1V, City of London",
-                salary: "£75,000",
-                type: "Permanent",
-                company: "Acme Company",
-                post_date: "14 days ago",
-                description: "React Developer Circa £75,000 City of London - Marylebone (NW1) The React Developer will work on a re-platforming of existing products ...",
-                logo:"https://logo.clearbit.com/company.com"
-            }
-        ]
+        id: "job-1001",
+        title: "React Developer",
+        location: "London",
+        salary: "£75,000",
+        type: "Permanent",
+        company: "Acme Company",
+        post_date: "14 days ago",
+        description: "React Developer Circa £75,000 City of London - Marylebone (NW1) The React Developer will work on a re-platforming of existing products ...",
+        logo:"https://logo.clearbit.com/company.com"
     }
+ ]
 ```
-
-## Bonus Points (as shown [here](https://github.totaljobsgroup.com/OrlandoBrown/bravo-technical-test-frontend#extra-bonus-points))
-Create a new endpoint to return a single job by its `id`
-
-## Setup Instructions
-##### Dependencies
-- `npm install` or `yarn install`
-
-##### Start Backend Application
-- `npm run dev` or `yarn dev`

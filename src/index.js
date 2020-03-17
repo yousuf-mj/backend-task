@@ -10,4 +10,4 @@ app.use(require('morgan')('dev'));
 
 app.use('/api', api);
 
-app.listen(port, () => console.log(`Backend server running on port ${ port }`));
+app.listen(port, () => console.log(`Backend server running on port ${ port } and accessible on http://localhost:5002/api/v1/jobs`));

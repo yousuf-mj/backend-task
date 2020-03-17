@@ -240,3 +240,5 @@ $RECYCLE.BIN/
 *.lnk
 
 .idea
+yarn.lock
+package-lock.json
