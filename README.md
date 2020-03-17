@@ -1,9 +1,9 @@
 # Full stack technical test (backend)
 
-This is the backend for providing job listings to the frontend
-there is only one endpoint http://localhost:5002/api/v1/jobs, which returns and object with jobs which is an array of objects.
+This is the backend for providing job listings. There is only one endpoint `http://localhost:5002/api/v1/jobs` 
 
-Example: 
+Here is an example what the structure will look like: 
+ 
 ```
     {
         jobs: [
@@ -15,11 +15,19 @@ Example:
                 type: "Permanent",
                 company: "Acme Company",
                 post_date: "14 days ago",
-                description: "React Developer Circa £75,000 City of London - Marylebone (NW1) ? ShortList Recruitment … The React Developer will work on a re-platforming of existing products to take advantage … The React Developer will benefit from working in a purely greenfield project",
+                description: "React Developer Circa £75,000 City of London - Marylebone (NW1) The React Developer will work on a re-platforming of existing products ...",
                 logo:"https://logo.clearbit.com/company.com"
             }
         ]
     }
 ```
 
-To start the server `npm run dev`
+## Bonus Points (as shown [here](https://github.totaljobsgroup.com/OrlandoBrown/bravo-technical-test-frontend#extra-bonus-points))
+Create a new endpoint to return a single job by its `id`
+
+## Setup Instructions
+##### Dependencies
+- `npm install` or `yarn install`
+
+##### Start Backend Application
+- `npm run dev` or `yarn dev`
