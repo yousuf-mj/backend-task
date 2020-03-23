@@ -22,3 +22,12 @@ describe('getJobs middleware', () => {
 		expect(res.json).toHaveBeenCalledWith(fixture);
 	});
 });
+
+describe('should return results based on key filter', async() => {
+    const allJobs = await getJobs(req, res);
+
+    const title = 'Web developer';
+
+    expect(req.query.title).toEqual(title)
+
+});
