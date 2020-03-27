@@ -2,13 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const port = 5002;
+const cors = require('cors')
 
 const api = require('./routes');
 const { errorResponse } = require('./middleware/error');
 
 app.use(bodyParser.json({ limit: '5MB' }));
 app.use(require('morgan')('dev'));
-
+app.use(cors())
 app.use('/api', api);
 app.use(errorResponse);
 
